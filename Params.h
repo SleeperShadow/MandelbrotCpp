@@ -23,16 +23,13 @@ static const char* output = "-output";
 static const char* q = "-q";
 static const char* quiet = "-quiet";
 
-// file name
-static std::string outputFile = "zad16.png";
-
 
 /* Image parameters */
 
 class ImageParams
 {
 public:
-
+	std::string outputFile = "zad16.png";
 	size_t width = 512;
 	size_t height = 512;
 	double xMin = -2.0;

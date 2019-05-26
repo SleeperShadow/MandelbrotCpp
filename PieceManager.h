@@ -90,7 +90,7 @@ inline int doWork(ImageParams & params, std::unique_ptr<PieceFactory> pieceFacto
 			});
 
 
-		std::ofstream out(outputFile, std::ios::binary);
+		std::ofstream out(params.outputFile, std::ios::binary);
 		TinyPngOut pngout(static_cast<uint32_t>(params.width), static_cast<uint32_t>(params.height), out);
 		pngout.write(pixels.data(), static_cast<size_t>(params.width * params.height));
 		return EXIT_SUCCESS;

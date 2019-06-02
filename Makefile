@@ -12,11 +12,11 @@ TARGET = $(shell basename "$$PWD")
 # Place to store all generated files
 BUILD_DIR = build
 # All source files. Header files are detected automatically
-SRCS = $(shell find . -path ./$(BUILD_DIR) -prune -o -name '*.cpp' -ls | awk '{$$1=$$2=$$3=$$4=$$5=$$6=$$7=$$8=$$9=$$10=""; print $0}' | sed 's/^\s*//' | grep -v -e '.zip\|.tar')
+SRCS = MandelbrotPng.cpp MandelbrotPiece.cpp Params.cpp TinyPngOut.cpp
 # Compiler. On non-gnu systems you may want to change this
-CC = g++
+CC = clang
 # C++ version
-EXTRAFLAGS = -std=gnu++14
+EXTRAFLAGS = -std=c++14
 
 SHELL = /bin/bash
 DEPENDENCY_LIST = $(BUILD_DIR)/depend

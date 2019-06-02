@@ -31,6 +31,7 @@ $(BUILD_DIR):
 
 $(TARGET): $(OBJS)
 	$(CC) $(EXTRAFLAGS) -o $(TARGET) $(OBJS) $(LIBS)
+	$(CC) -g -o $(TARGET) $(OBJS) $(LIBS)
 
 # Every .o file will be matched here, and will be compiled from a .cpp file. Other dependencies are listed with '-include $(DEPENDENCY_LIST)'.
 $(BUILD_DIR)/%.o: %.cpp

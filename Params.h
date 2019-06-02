@@ -2,6 +2,7 @@
 
 #include <vector>
 #include <future>
+#include <complex>
 
 // size strings
 static const char* s = "-s";
@@ -44,4 +45,20 @@ public:
 
 public:
 	void initParameters(int argc, char** argv);
+
+	inline double getRealHeight() const
+	{
+		return yMax - yMin;
+	}
+
+	inline double getRealWidth() const
+	{
+		return xMax - xMin;
+	}
+
+	inline std::complex<double> transformPoint(size_t x, size_t y) const
+	{
+		return std::complex<double>{x / (double)width * getRealWidth() + xMin,
+									y / (double)height * getRealHeight() + yMin };
+	}
 };

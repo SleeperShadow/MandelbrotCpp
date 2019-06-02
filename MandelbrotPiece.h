@@ -3,6 +3,7 @@
 #include <memory>
 #include <mutex>
 #include <vector>
+#include <tuple>
 #include "Params.h"
 
 using std::uint8_t;
@@ -18,7 +19,9 @@ public:
 
 protected:
 
-	uint32_t mandelbrot(size_t x, size_t y);
+	uint32_t escape(std::complex<double> const& c);
+
+	std::tuple<uint8_t, uint8_t, uint8_t> getRGB(uint32_t pix);
 
 protected:
 

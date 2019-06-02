@@ -8,6 +8,7 @@
 #include <fstream>
 #include <cassert>
 #include <memory>
+#include "algorithm"
 
 #include "Params.h"
 #include "MandelbrotPiece.h"
@@ -34,7 +35,7 @@ private:
 
 inline int PieceManager<false>::run()
 {
-	return doWork(params, std::make_unique<PieceFactory>());
+	return doWork(params, std::unique_ptr<PieceFactory>(new PieceFactory()));
 }
 
 template<>
@@ -49,13 +50,13 @@ public:
 
 private:
 	ImageParams& params;
-	std::chrono::steady_clock::time_point start;
+	std::chrono::high_resolution_clock ::time_point start;
 };
 
 inline int PieceManager<true>::run()
 {
 	start = std::chrono::high_resolution_clock::now();
-	return doWork(params, std::make_unique<LoggingPieceFactory>());
+	return doWork(params, std::unique_ptr<LoggingPieceFactory>(new LoggingPieceFactory()));
 }
 
 inline PieceManager<true>::~PieceManager()

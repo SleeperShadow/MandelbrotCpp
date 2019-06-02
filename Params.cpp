@@ -1,6 +1,7 @@
 #include "Params.h"
 #include <limits>
 #include <string>
+#include "cstring"
 
 void ImageParams::initParameters(int argc, char** argv)
 {

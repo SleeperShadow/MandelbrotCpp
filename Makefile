@@ -14,9 +14,9 @@ BUILD_DIR = build
 # All source files. Header files are detected automatically
 SRCS = MandelbrotPng.cpp MandelbrotPiece.cpp Params.cpp TinyPngOut.cpp
 # Compiler. On non-gnu systems you may want to change this
-CC = clang
+CC = g++
 # C++ version
-EXTRAFLAGS = -std=c++14
+EXTRAFLAGS = -std=c++11
 
 SHELL = /bin/bash
 DEPENDENCY_LIST = $(BUILD_DIR)/depend

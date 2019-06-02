@@ -3,6 +3,7 @@
 #include "Params.h"
 #include <chrono>
 #include <string>
+#include "math.h"
 
 MandelbrotPiece::MandelbrotPiece(std::vector<uint8_t>& _pixels, const size_t _blockSize, const size_t _currentBlock, ImageParams const& _params):
 	pixels(_pixels),

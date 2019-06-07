@@ -54,6 +54,12 @@ void ImageParams::initParameters(int argc, char** argv)
 		{
 			quietMode = true;
 		}
+        else if (strcmp(*argv, i) == 0 || strcmp(*argv, iters) == 0)
+        {
+            ++argv;
+            ++passedArgs;
+            iterations = std::stoi(std::string{*argv});
+        }
 		++passedArgs;
 		++argv;
 	}

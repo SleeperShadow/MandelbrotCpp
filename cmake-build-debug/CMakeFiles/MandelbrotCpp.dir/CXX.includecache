@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/licht/Dev/MandelbrotCpp/MandelbrotPiece.cpp
+MandelbrotPiece.h
+/home/licht/Dev/MandelbrotCpp/MandelbrotPiece.h
+iostream
+-
+Params.h
+/home/licht/Dev/MandelbrotCpp/Params.h
+chrono
+-
+string
+-
+cmath
+-
+
+/home/licht/Dev/MandelbrotCpp/MandelbrotPiece.h
+memory
+-
+mutex
+-
+vector
+-
+Params.h
+/home/licht/Dev/MandelbrotCpp/Params.h
+
+/home/licht/Dev/MandelbrotCpp/Params.h
+vector
+-
+future
+-
+

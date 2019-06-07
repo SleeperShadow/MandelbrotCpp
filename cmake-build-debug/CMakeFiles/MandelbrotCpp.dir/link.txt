@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/MandelbrotCpp.dir/MandelbrotPng.cpp.o CMakeFiles/MandelbrotCpp.dir/TinyPngOut.cpp.o CMakeFiles/MandelbrotCpp.dir/Params.cpp.o CMakeFiles/MandelbrotCpp.dir/MandelbrotPiece.cpp.o  -o MandelbrotCpp -lpthread 

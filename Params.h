@@ -24,6 +24,10 @@ static const char* output = "-output";
 static const char* q = "-q";
 static const char* quiet = "-quiet";
 
+// iterations strings
+static const char* i = "-i";
+static const char* iters = "-iters";
+
 
 /* Image parameters */
 
@@ -31,8 +35,8 @@ class ImageParams
 {
 public:
 	std::string outputFile = "zad16.png";
-	size_t width = 512;
-	size_t height = 512;
+	size_t width = 640;
+	size_t height = 480;
 	double xMin = -2.0;
 	double xMax = 2.0;
 	double yMin = -2.0;

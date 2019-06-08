@@ -54,6 +54,10 @@ void ImageParams::initParameters(int argc, char** argv)
 		{
 			quietMode = true;
 		}
+        else if (strcmp(*argv, tiled) == 0)
+        {
+            isTiled = true;
+        }
         else if (strcmp(*argv, i) == 0 || strcmp(*argv, iters) == 0)
         {
             ++argv;
@@ -63,4 +67,22 @@ void ImageParams::initParameters(int argc, char** argv)
 		++passedArgs;
 		++argv;
 	}
+
+	if (isTiled)
+    {
+	    tileSizeX = width/numThreads;
+        maxTilesX = numThreads;
+    }
+	else
+    {
+	    maxTilesX = 1;
+	    tileSizeX = width;
+    }
+	tileSizeY = height/numThreads;
+	maxTilesY = numThreads;
+
+	currentTile.tileX = 0;
+	currentTile.tileY = 0;
+	currentTile.canDraw = true;
+	runningTasks.reserve(maxTilesY * maxTilesX);
 }

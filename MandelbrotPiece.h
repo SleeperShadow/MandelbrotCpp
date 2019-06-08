@@ -13,7 +13,7 @@ using std::size_t;
 class MandelbrotPiece
 {
 public:
-	MandelbrotPiece(std::vector<uint8_t>& _pixels, const size_t _blockSize, const size_t _currentBlock, ImageParams const& _params);
+	MandelbrotPiece(std::vector<uint8_t>& _pixels, ImageParams const& _params, size_t _threadId);
 
 	virtual void run();
 
@@ -26,10 +26,8 @@ protected:
 protected:
 
 	std::vector<uint8_t>& pixels;
-	size_t blockSize;
-	size_t currentBlock;
 	ImageParams const& params;
-
+    size_t id;
 };
 
 class LoggingMandelbrotPiece : public MandelbrotPiece
@@ -41,7 +39,7 @@ private:
 
 	static lock mutex;
 public:
-	LoggingMandelbrotPiece(std::vector<uint8_t>& _pixels, const size_t _blockSize, const size_t _currentBlock, ImageParams const& _params);
+	LoggingMandelbrotPiece(std::vector<uint8_t>& _pixels, ImageParams const& _params, size_t threadId);
 
 	virtual void run() override;
 

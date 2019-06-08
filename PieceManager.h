@@ -73,15 +73,11 @@ inline int doWork(ImageParams & params, std::unique_ptr<PieceFactory> pieceFacto
 {
 	try {
 		std::vector<uint8_t> pixels(params.height * params.width * 3);
-
-		const size_t blockSize = params.height / params.numThreads;
-		assert(blockSize > 0);
-
-		for (size_t block = 0; block < params.numThreads; ++block)
+		for (size_t threadId = 0; threadId < params.numThreads; ++threadId)
 		{
-			params.runningTasks.emplace_back(std::async(std::launch::async, [blockSize, &params, block, &pixels, &pieceFactory]()
+			params.runningTasks.emplace_back(std::async(std::launch::async, [&params, threadId, &pixels, &pieceFactory]()
 				{
-					auto piece = pieceFactory->create(pixels, blockSize, block, params);
+					auto piece = pieceFactory->create(pixels, params,threadId);
 					piece->run();
 				}));
 		}

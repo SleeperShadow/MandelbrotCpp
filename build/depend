@@ -1,0 +1,5 @@
+build/./MandelbrotPng.o: MandelbrotPng.cpp Params.h PieceManager.h \
+build/./ MandelbrotPiece.h TinyPngOut.hpp PieceFactory.h
+build/./MandelbrotPiece.o: MandelbrotPiece.cpp MandelbrotPiece.h Params.h
+build/./Params.o: Params.cpp Params.h
+build/./TinyPngOut.o: TinyPngOut.cpp TinyPngOut.hpp

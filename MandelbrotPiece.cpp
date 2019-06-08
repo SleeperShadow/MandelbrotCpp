@@ -5,28 +5,35 @@
 #include <string>
 #include <cmath>
 
-MandelbrotPiece::MandelbrotPiece(std::vector<uint8_t>& _pixels, const size_t _blockSize, const size_t _currentBlock, ImageParams const& _params):
+MandelbrotPiece::MandelbrotPiece(std::vector<uint8_t>& _pixels, ImageParams const& _params, size_t threadId):
 	pixels(_pixels),
-	blockSize(_blockSize),
-	currentBlock(_currentBlock),
-	params(_params)
+	params(_params),
+	id(threadId)
 {
 }
 
-void MandelbrotPiece::run()
-{
-	size_t max_y = (currentBlock + 1) * blockSize;
-	for (size_t y = currentBlock * blockSize; y < max_y; ++y)
-	{
-		for (size_t x = 0; x < params.width; ++x) {
-			auto complexPoint = params.transformPoint(x, y);
-			auto pix = escape(complexPoint);
-			auto rgb = getRGB(pix);
-			pixels[(y * params.width * 3) + x * 3 + 0] = std::get<0>(rgb);
-			pixels[(y * params.width * 3) + x * 3 + 1] = std::get<1>(rgb);
-			pixels[(y * params.width * 3) + x * 3 + 2] = std::get<2>(rgb);
-		}
-	}
+void MandelbrotPiece::run() {
+    auto tile = params.getNextTile();
+
+    while (tile.canDraw)
+    {
+        size_t max_y = (tile.tileY + 1) * params.tileSizeY;
+        size_t max_x = (tile.tileX + 1) * params.tileSizeX;
+
+        for (size_t y = tile.tileY * params.tileSizeY; y < max_y; ++y)
+        {
+            for (size_t x = tile.tileX * params.tileSizeX; x < max_x; ++x)
+            {
+                auto complexPoint = params.transformPoint(x, y);
+                auto pix = escape(complexPoint);
+                auto rgb = getRGB(pix);
+                pixels[(y * params.width * 3) + x * 3 + 0] = std::get<0>(rgb);
+                pixels[(y * params.width * 3) + x * 3 + 1] = std::get<1>(rgb);
+                pixels[(y * params.width * 3) + x * 3 + 2] = std::get<2>(rgb);
+                }
+        }
+        tile = params.getNextTile();
+    }
 }
 
 uint32_t MandelbrotPiece::escape(std::complex<double> const& c) {
@@ -58,8 +65,8 @@ std::tuple<uint8_t, uint8_t, uint8_t> MandelbrotPiece::getRGB(uint32_t pix)
 // init mutex with default value
 std::mutex LoggingMandelbrotPiece::mutex{};
 
-LoggingMandelbrotPiece::LoggingMandelbrotPiece(std::vector<uint8_t>& _pixels, const size_t _blockSize, const size_t _currentBlock, ImageParams const& _params)
-	: base(_pixels, _blockSize, _currentBlock, _params)
+LoggingMandelbrotPiece::LoggingMandelbrotPiece(std::vector<uint8_t>& _pixels, ImageParams const& _params, size_t threadId)
+	: base(_pixels,  _params,  threadId)
 {
 }
 
@@ -85,13 +92,13 @@ void LoggingMandelbrotPiece::log(std::string const& message)
 
 void LoggingMandelbrotPiece::onStart()
 {
-	std::string&& startMsg = "Thread-< " + std::to_string(currentBlock) + " > started.";
+	std::string&& startMsg = "Thread-< " + std::to_string(id) + " > started.";
 	log(startMsg);
 }
 
 void LoggingMandelbrotPiece::onEnd(double executionTime)
 {
-	std::string&& endMsg = "Thread-< " + std::to_string(currentBlock) + " > stopped." + '\n' +
-						   "Thread-< " + std::to_string(currentBlock) + " > execution time was(millis): < " + std::to_string(executionTime) + " >.";
+	std::string&& endMsg = "Thread-< " + std::to_string(id) + " > stopped." + '\n' +
+						   "Thread-< " + std::to_string(id) + " > execution time was(millis): < " + std::to_string(executionTime) + " >.";
 	log(endMsg);
 }

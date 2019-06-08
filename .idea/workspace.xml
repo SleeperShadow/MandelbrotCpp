@@ -12,7 +12,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9072bacd-2bfd-46e9-8747-0dd3dad3cdf6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandelbrotPiece.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MandelbrotPiece.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandelbrotPiece.h" beforeDir="false" afterPath="$PROJECT_DIR$/MandelbrotPiece.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Params.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Params.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Params.h" beforeDir="false" afterPath="$PROJECT_DIR$/Params.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PieceFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/PieceFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PieceManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/PieceManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MandelbrotCpp.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MandelbrotCpp.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MandelbrotCpp.dir/MandelbrotPiece.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MandelbrotCpp.dir/MandelbrotPiece.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MandelbrotCpp.dir/MandelbrotPng.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MandelbrotCpp.dir/Params.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MandelbrotCpp.dir/Params.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/MandelbrotCpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/MandelbrotCpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/zad16.png" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/zad16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zad16.png" beforeDir="false" afterPath="$PROJECT_DIR$/zad16.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,20 +40,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MandelbrotPiece.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            <state relative-caret-position="986">
+              <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -49,28 +53,67 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Params.cpp">
+        <entry file="file://$PROJECT_DIR$/PieceFactory.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            <state relative-caret-position="551">
+              <caret line="19" column="109" selection-start-line="19" selection-start-column="109" selection-end-line="19" selection-end-column="109" />
+              <folding>
+                <element signature="e#14#42#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PieceFactory.h">
+        <entry file="file://$PROJECT_DIR$/MandelbrotPng.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="126" selection-start-line="19" selection-start-column="126" selection-end-line="19" selection-end-column="126" />
+            <state relative-caret-position="17">
+              <caret line="7" column="78" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PieceManager.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            <state relative-caret-position="692">
+              <caret line="80" column="79" lean-forward="true" selection-start-line="80" selection-start-column="79" selection-end-line="80" selection-end-column="79" />
+              <folding>
+                <element signature="e#14#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MandelbrotPiece.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="771">
+              <caret line="41" column="101" selection-start-line="41" selection-start-column="101" selection-end-line="41" selection-end-column="101" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Params.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="974">
+              <caret line="95" column="48" lean-forward="true" selection-start-line="95" selection-start-column="48" selection-end-line="95" selection-end-column="48" />
+              <folding>
+                <element signature="e#14#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Params.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="797">
+              <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,12 +131,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/Params.cpp" />
+        <option value="$PROJECT_DIR$/MandelbrotPiece.h" />
+        <option value="$PROJECT_DIR$/Params.h" />
         <option value="$PROJECT_DIR$/PieceFactory.h" />
         <option value="$PROJECT_DIR$/PieceManager.h" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/MandelbrotPiece.cpp" />
-        <option value="$PROJECT_DIR$/Makefile" />
       </list>
     </option>
   </component>
@@ -108,15 +153,17 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-4" />
-    <option name="width" value="3848" />
-    <option name="height" value="2124" />
+    <option name="x" value="1286" />
+    <option name="y" value="707" />
+    <option name="width" value="2548" />
+    <option name="height" value="1407" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -128,15 +175,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -169,28 +217,30 @@
       <updated>1559494574228</updated>
       <workItem from="1559494577389" duration="3023000" />
       <workItem from="1559591146129" duration="21000" />
+      <workItem from="1559915301187" duration="3183000" />
+      <workItem from="1559927736338" duration="5447000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3044000" />
+    <option name="totallyTimeSpent" value="11674000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="3840" height="2120" extended-state="6" />
+    <frame x="-6" y="0" width="3852" height="2126" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08840656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18082847" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3298916" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3294979" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4001046" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32327804" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.32269874" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
@@ -205,37 +255,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/include/c++/8/thread">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MandelbrotPiece.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Params.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PieceFactory.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="126" selection-start-line="19" selection-start-column="126" selection-end-line="19" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -245,15 +264,121 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
+        <state>
           <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/8/bits/invoke.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/8/bits/std_function.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="687" selection-start-line="687" selection-end-line="687" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/8/future">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="564" selection-start-line="564" selection-end-line="564" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/8/thread">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="252" selection-start-line="252" selection-end-line="252" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/8/tuple">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="1320" selection-start-line="1320" selection-end-line="1320" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/8/bits/unique_ptr.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="337" selection-start-line="337" selection-end-line="337" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Params.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="797">
+          <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/8/bits/std_mutex.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="161" selection-start-line="161" selection-end-line="161" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MandelbrotPiece.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="771">
+          <caret line="41" column="101" selection-start-line="41" selection-start-column="101" selection-end-line="41" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Params.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="974">
+          <caret line="95" column="48" lean-forward="true" selection-start-line="95" selection-start-column="48" selection-end-line="95" selection-end-column="48" />
+          <folding>
+            <element signature="e#14#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PieceFactory.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="19" column="109" selection-start-line="19" selection-start-column="109" selection-end-line="19" selection-end-column="109" />
+          <folding>
+            <element signature="e#14#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MandelbrotPng.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="7" column="78" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PieceManager.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        <state relative-caret-position="692">
+          <caret line="80" column="79" lean-forward="true" selection-start-line="80" selection-start-column="79" selection-end-line="80" selection-end-column="79" />
+          <folding>
+            <element signature="e#14#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MandelbrotPiece.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
